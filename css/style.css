@@ -109,3 +109,9 @@ body{
 .active{
   background-color: black;
 }
+.slides {
+    width: 100%;
+    height: 100%;
+    padding-left: -30px; /* Adjust this value; try a negative value */
+}
+.flexslider .slides > li { padding-left: 0; }
