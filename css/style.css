@@ -115,9 +115,11 @@ body{
     padding-left: -30px; /* Adjust this value; try a negative value */
 }
 .flexslider .slides > li { padding-left: 0; }
-img{
-	height: 30px;
-	margin: 10px auto 10px auto;
-	display: block;
-}
+ @media screen and (max-device-width: 480px) {
+   img {
+     float: left;
+     width: 200px;
+   }
+ }
+
 
