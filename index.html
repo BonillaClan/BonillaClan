@@ -17,22 +17,30 @@
      <link href="css/lightbox.min.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example" id="home">
+<body data-spy="scroll" data-target="#navbar-example">
             
     <!--Main Navigation-->
     <header>
     <!-- Image and text -->
             <div id="navbar-example">
-     
-<nav class="nav navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #A2DED0;;">
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+    <!-- Navbar brand -->
     <a class="navbar-brand" href="#">
-        <img src="logo.PNG"  class="d-inline-block align-top" alt="" height="50px"> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav navbar-example">
-        <ul class="navbar-nav nav-" role="tablist">
+      <img src="logo.png"  class="d-inline-block align-top" alt="" height="50px"> </a>
+    </a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -42,23 +50,23 @@
             <li class="nav-item">
                 <a class="nav-link" href="#gallery">Gallery</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
+
+            
+
         </ul>
+        <!-- Links -->
     </div>
+    <!-- Collapsible content -->
+
 </nav>
-        
-         
-    </header>
-    <main>
-    <br>
-                 
+<!--/.Navbar-->
+
 <!--Carousel Wrapper-->
-<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+<br id="home">
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" data-target="#carousel">
     <!--Indicators-->
     <ol class="carousel-indicators">
-        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-2" data-slide-to="1"></li>
         <li data-target="#carousel-example-2" data-slide-to="2"></li>
     </ol>
@@ -67,7 +75,7 @@
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
             <div class="view hm-black-light">
-                <img class="d-block w-100 img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
                 <div class="mask"></div>
             </div>
             <div class="carousel-caption">
@@ -78,7 +86,7 @@
         <div class="carousel-item">
             <!--Mask color-->
             <div class="view hm-black-strong">
-                <img class="d-block w-100 img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
                 <div class="mask"></div>
             </div>
             <div class="carousel-caption">
@@ -89,7 +97,7 @@
         <div class="carousel-item">
             <!--Mask color-->
             <div class="view hm-black-slight">
-                <img class="d-block w-100 img-fluid" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
                 <div class="mask"></div>
             </div>
             <div class="carousel-caption">
@@ -113,6 +121,8 @@
 <!--/.Carousel Wrapper-->
                 
 
+
+
         <br id="about">
 		<div class="about">
         <br>
@@ -128,8 +138,8 @@
 		 
    
     
-    <div class="album text-muted">
-      <div class="container">
+    <div class="album h3 img-fluid">
+      <div class="">
             <h3 class="text-center headline"> Gallery </h3>
 		  <br>
         <div class="row">
@@ -137,57 +147,57 @@
                 <a href="images/Dad head shot.jpg" data-lightbox="image-1" data-title="Grandpa">
 
 
-            <img src="images/Dad head shot.jpg" alt="Card image cap" width="300px" height="300px" class="img-fluid img-thumbnail">
+            <img src="images/Dad head shot.jpg" alt="Card image cap" width="300px" height="300px" class="img-fluid img-thumbnail img-gallery">
             </a>
             <p class="card-text"> Picture of Grandpa</p>
           </div>
           <div class="card">
           <a href="images/wedding.jpg" data-lightbox="image-1" data-title="Grandpa and Grandma's wedding">
-            <img src="images/wedding.jpg" alt="Picture of Grandpa and Grandma's wedding" class="img-fluid img-thumbnail">
+            <img src="images/wedding.jpg" alt="Picture of Grandpa and Grandma's wedding" class="img-fluid img-thumbnail img-gallery">
             </a>
             <p class="card-text"> A picture of Grandpa and Grandma on their wedding day.</p>
           </div>
           <div class="card">
             <a href="images/xander.jpg" data-lightbox="image-1" data-title="Xander">
-            <img src="images/xander.jpg" alt="Card image cap" class="img-thumbnail img-fluid">
+            <img src="images/xander.jpg" alt="Card image cap" class="img-thumbnail img-fluid img-gallery">
             </a>
             <p class="card-text">Picture of Xander, the creator of this website.</p>
           </div>
 
           <div class="card">
           <a href="http://via.placeholder.com/300x300" data-lightbox="image-1" data-title="Picture">
-            <img src="http://via.placeholder.com/300x300" alt="Picture" class="img-thumbnail img-fluid">
+            <img src="http://via.placeholder.com/300x300" alt="Picture" class="img-thumbnail img-fluid img-gallery">
             </a>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
           <div class="card">
               <a href="http://via.placeholder.com/300x300" data-lightbox="image-1" data-title="Picture">
-            <img src="http://via.placeholder.com/300x300" alt="Picture" class="img-thumbnail img-fluid">
+            <img src="http://via.placeholder.com/300x300" alt="Picture" class="img-thumbnail img-fluid img-gallery">
             </a>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
           <div class="card">
                <a href="http://via.placeholder.com/300x300" data-lightbox="image-1" data-title="Picture">
-            <img src="http://via.placeholder.com/300x300" alt="Picture" class="img-thumbnail img-fluid">
+            <img src="http://via.placeholder.com/300x300" alt="Picture" class="img-thumbnail img-fluid img-gallery">
             </a>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
 
           <div class="card">
                <a href="http://via.placeholder.com/300x300" data-lightbox="image-1" data-title="Picture">
-            <img src="http://via.placeholder.com/300x300" alt="Picture" class="img-thumbnail img-fluid">
+            <img src="http://via.placeholder.com/300x300" alt="Picture" class="img-thumbnail img-fluid img-gallery">
             </a>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
           <div class="card">
                <a href="http://via.placeholder.com/300x300" data-lightbox="image-1" data-title="Picture">
-            <img src="http://via.placeholder.com/300x300" alt="Picture" class="img-thumbnail img-fluid" width="300">
+            <img src="http://via.placeholder.com/300x300" alt="Picture" class="img-thumbnail img-fluid img-gallery" width="300">
             </a>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
           <div class="card">
              <a href="images/andrew.jpg" data-lightbox="image-1" data-title="Andrew Puetz">
-            <img src="images/andrew.jpg" alt="Picture" class="img-thumbnail img-fluid">
+            <img src="images/andrew.jpg" alt="Picture" class="img-thumbnail img-fluid img-gallery">
             </a>
             <p class="card-text">Picture of Andrew Puetz pulled off of google+</p>
           </div>
@@ -259,6 +269,10 @@ $('a[href*="#"]')
     $('body').scrollspy({ target: '#navbar-example' })
 </script>
 
+    </script>
+    <script type="text/javascript">
+      
+    </script>
 </body>
 
 </html>
