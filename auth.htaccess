@@ -1,5 +1,0 @@
-uthType Basic
-AuthName "Site Description"
-AuthBasicProvider file
-AuthUserFile userlist.txt
-Require valid-user 
